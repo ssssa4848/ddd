@@ -1,0 +1,95 @@
+local plr = game:GetService("Players").LocalPlayer.Character
+
+for i,v in pairs(game.Players:GetChildren())do
+	if v:IsInGroup(15131884) then
+		local a = v:GetRoleInGroup(15131884)
+		if a == "Junior Moderator" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "JR Mod",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		elseif a == "Moderator" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Mod",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		elseif a == "Senior Moderator" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "SR Mod",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		elseif a == "Head Moderator" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "HEAD Mod",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		elseif a == "Contributor" or a == "Developer" or a == "Owner" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Dev,Contributor,Owner",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		end
+	end
+end
+
+plr.ChildAdded:Connect(function(v)
+	if v:IsInGroup(15131884) then
+		local a = v:GetRoleInGroup(15131884)
+		if a == "Junior Moderator" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "JR Mod",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		elseif a == "Moderator" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Mod",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		elseif a == "Senior Moderator" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "SR Mod",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		elseif a == "Head Moderator" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "HEAD Mod",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		elseif a == "Contributor" or a == "Developer" or a == "Owner" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Dev,Contributor,Owner",
+				Text = "Username: "..v.Name.."",
+				Duration = 9e9,
+				Button1 = "Close",
+				Button2 = "Leave",
+			})
+		end
+	end
+end)
